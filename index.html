@@ -5,12 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fascinate+Inline&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styleSheet.css">
     <title>Homepage</title>
+    <!--Checks if java script is working or not-->
+    <noscript>
+        <h1>Please Enable JavaScript</h1>
+        <style>
+            body{
+                background-color: red;
+            }
+            h1{
+                text-align: center;
+                color: yellow;
+            }
+            #webpage{
+                display: none;
+            }
+        </style>
+    </noscript>
+    <!--Checks if java script is working or not-->
 </head>
 <body>
     <!--Starting main content coding-->
@@ -23,10 +41,30 @@
             </div>
             <div class="app-name"><!--App name-->
                 <h1>Shield</h1>
-                <i class="far fa-play-circle animate__animated animate__swing animate__infinite	infinite" style="font-size: 50px;cursor: pointer;"></i>
+                <i class="far fa-play-circle animate__animated animate__swing animate__infinite	infinite" onclick="sidebar()" style="font-size: 50px;cursor: pointer;"></i>
             </div>
         </div>
+        <!--sidebar coding starting-->
+        <section id="slidebar">
+            <aside id="animation">
+                <div><i class="fas fa-window-close close" style="font-size: 30px; cursor: pointer;" onclick="sidebar_close()"></i></div>
+                <h1>Login User!</h1>
+                <input type="text" placeholder="&#xf007;  Username"/>
+                <input type="password" placeholder="&#xf023;  Password">
+                <div><input type="submit" value="Login"></div>
+                <h1>Signup User!</h1>
+                <input type="text" placeholder="&#xf007;  Your name">
+                <input type="email" placeholder="&#xf199;  Email id">
+                <input type="password" placeholder="&#xf023;  Password">
+                <input type="number" placeholder="&#xf10b;  Mobile">
+                <div><input type="submit" value="Signup"></div>
+            </aside>
+        </section>
+        <!--sidebar coding ending-->
     </main>
     <!--ending main content coding-->
+
+    <script src="script/script.js"></script>
+
 </body>
 </html>
