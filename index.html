@@ -47,17 +47,23 @@
         <!--sidebar coding starting-->
         <section id="slidebar">
             <aside id="animation">
-                <div><i class="fas fa-window-close close" style="font-size: 30px; cursor: pointer;" onclick="sidebar_close()"></i></div>
-                <h1>Login User!</h1>
-                <input type="text" placeholder="&#xf007;  Username"/>
-                <input type="password" placeholder="&#xf023;  Password">
-                <div><input type="submit" value="Login"></div>
-                <h1>Signup User!</h1>
-                <input type="text" placeholder="&#xf007;  Your name">
-                <input type="email" placeholder="&#xf199;  Email id">
-                <input type="password" placeholder="&#xf023;  Password">
-                <input type="number" placeholder="&#xf10b;  Mobile">
-                <div><input type="submit" value="Signup"></div>
+                <form action="" autocomplete="off">
+                    <div><i class="fas fa-window-close close" style="font-size: 30px; cursor: pointer;" onclick="sidebar_close()"></i></div>
+                    <h1>Login User!</h1>
+                    <input type="text" placeholder="&#xf007;  Username"/>
+                    <input type="password" placeholder="&#xf023;  Password">
+                    <div><input type="submit" value="Login"></div>
+                </form>
+                <form action="" autocomplete="off">
+                    <h1>Signup User!</h1>
+                    <input id="sign-name" type="text" placeholder="&#xf007;  Your name" required>
+                    <input id="sign-email" onchange="signup_check()" type="email" placeholder="&#xf199;  Email id" required class="animate__animated">
+                    <span id="signup-warning"></span>
+                    <input id="sign-pwd" type="password"  placeholder="&#xf023;  Password" required>
+                    <input id="sign-num" type="number" placeholder="&#xf10b;  Mobile" required>
+                    <span id="signup_success"></span>
+                    <div><input id="sign-sub" type="submit" value="Signup" onclick="return signup()"></div>
+                </form>
             </aside>
         </section>
         <!--sidebar coding ending-->
@@ -65,6 +71,7 @@
     <!--ending main content coding-->
 
     <script src="script/script.js"></script>
-
+    <script src="script/script.js"></script>
+    <script src="script/signup_login.js"></script>
 </body>
 </html>

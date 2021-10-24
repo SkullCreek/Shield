@@ -31,13 +31,21 @@
     }
 }
 section{
-    display: none;
+    display: block;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 47%;
 }
 
 aside{
     display: flex;
     flex-direction: column;
     background-color: #FF005C;
+    width: 350px;
     position: absolute;
     z-index: 1000;
     box-shadow: 0px 0px 8px grey;
