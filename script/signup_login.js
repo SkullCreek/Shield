@@ -11,10 +11,10 @@ function signup(){
         var user_data = JSON.stringify(user_input);
         localStorage.setItem(email,user_data);
         document.getElementById("signup_success").innerHTML= "Sign Up Successfull";
-        name="";
-        email="";
-        mobile="";
-        password="";
+        document.getElementById("sign-name").value="";
+        document.getElementById("sign-email").value="";
+        document.getElementById("sign-num").value="";
+        document.getElementById("sign-pwd").value="";
         setTimeout(function(){document.getElementById("signup_success").innerHTML=""},2000);
         return false;
     }
@@ -60,7 +60,9 @@ function login(){
     else{
         if(localStorage.getItem(user_detail.username).match(user_detail.password))
         {
-            alert("Login success");
+            location.replace("profile/profile.html");
+            sessionStorage.setItem('user_mail',username);
+            return false;
         }
         else{
             alert("user not found");

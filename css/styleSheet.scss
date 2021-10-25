@@ -66,9 +66,10 @@ aside{
         font-family: sans-serif;
         font-style: normal;
         font-weight: normal;
-        font-size: 40px;
+        font-size: 30px;
         line-height: 57px;
         color: whitesmoke;
+        text-align: right;
     }
     input[type=text],input[type=email],input[type=password],input[type=number]{
         width: 100%;
@@ -115,7 +116,7 @@ aside{
     top: 0;
     left: 0;
     animation: hide 30s;
-    animation-delay: 1s;
+    animation-delay: 3s;
     animation-fill-mode: forwards;
 }
 @keyframes hide{
