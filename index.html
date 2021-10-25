@@ -50,9 +50,9 @@
                 <form action="" autocomplete="off">
                     <div><i class="fas fa-window-close close" style="font-size: 30px; cursor: pointer;" onclick="sidebar_close()"></i></div>
                     <h1>Login User!</h1>
-                    <input type="text" placeholder="&#xf007;  Username"/>
-                    <input type="password" placeholder="&#xf023;  Password">
-                    <div><input type="submit" value="Login"></div>
+                    <input id="log-name" type="text" placeholder="&#xf007;  Username" required>
+                    <input id="log-pwd" type="password" placeholder="&#xf023;  Password" required>
+                    <div><input onclick="login()" id="log-sub" type="submit" value="Login"></div>
                 </form>
                 <form action="" autocomplete="off">
                     <h1>Signup User!</h1>
